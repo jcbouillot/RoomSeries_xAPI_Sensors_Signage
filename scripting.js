@@ -19,7 +19,7 @@ function getData() {
         var AirQualityIndex = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.AirQuality.Index;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
-        var Software = response.result.SystemUnit.Software.Version;
+        var Software = response.result.SystemUnit.Software.DisplayName;
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
