@@ -26,6 +26,7 @@ function getData() {
         var ConnectedDevices = response.result.Peripherals.ConnectedDevice;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
+        var alertlist = "";
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
@@ -40,7 +41,6 @@ function getData() {
         $("#EthernetMAC").html(EthernetMAC);
         $("#ActiveCall").html(ActiveCall == "0" ? "Idle" : ActiveCall);
         $("#Diagnostics").html(alertlist);
-        $("#Call").html(calldetails == "" ? "None" : calldetails);
         $("#TouchPanel").html(devicelist);
         $("#Humidity").html(Humidity);
         $("#Temperature").html(Temperature);
