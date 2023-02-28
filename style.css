@@ -22,6 +22,12 @@
 .sensorBoxesRow{
   
 }
+.footer{
+  text-align:right;
+  margin-top:25px;
+  font-size:15px;
+}
+
 body {
 font-family: 'Sora', sans-serif;
 text-align: center;
