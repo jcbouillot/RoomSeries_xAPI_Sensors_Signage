@@ -13,20 +13,13 @@ function getData() {
         var PeoplePresence = response.result.RoomAnalytics.PeoplePresence;
         var Current = response.result.RoomAnalytics.PeopleCount.Current;
         var Capacity = response.result.RoomAnalytics.PeopleCount.Capacity;
-        var ProductId = response.result.SystemUnit.ProductId;
         var Name = response.result.UserInterface.ContactInfo.Name;
-        var Software = response.result.SystemUnit.Software.Version;
-        var ReleaseDate = response.result.SystemUnit.Software.ReleaseDate;
-        var Ethernet = response.result.Network[0].IPv4.Address;
-        var EthernetMAC = response.result.Network[0].Ethernet.MacAddress;
-        var ActiveCall = response.result.SystemUnit.State.NumberOfActiveCalls;
         var Humidity = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.RelativeHumidity;
         var Temperature = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.AmbientTemperature;
         var AirQualityIndex = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.AirQuality.Index;
         var ConnectedDevices = response.result.Peripherals.ConnectedDevice;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
-        var alertlist = "";
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
@@ -34,14 +27,7 @@ function getData() {
         $("#PeoplePresence").html(PeoplePresence);
         $("#Current").html(Current);
         $("#Capacity").html(Capacity);
-        $("#ProductId").html(ProductId);
         $("#Name").html(Name);
-        $("#Software").html(Software + " (" + ReleaseDate + ")");
-        $("#Ethernet").html(Ethernet);
-        $("#EthernetMAC").html(EthernetMAC);
-        $("#ActiveCall").html(ActiveCall == "0" ? "Idle" : ActiveCall);
-        $("#Diagnostics").html(alertlist);
-        $("#TouchPanel").html(devicelist);
         $("#Humidity").html(Humidity);
         $("#Temperature").html(Temperature);
         $("#AirQuality").html(AirQualityIndex);
