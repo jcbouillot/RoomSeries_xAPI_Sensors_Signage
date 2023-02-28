@@ -20,6 +20,7 @@ function getData() {
         var ConnectedDevices = response.result.Peripherals.ConnectedDevice;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
+        var Software = response.result.SystemUnit.Software.Version;
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
@@ -33,6 +34,7 @@ function getData() {
         $("#AirQuality").html(AirQualityIndex);
         $("#BookingStatus").html(BookingStatus);
         $("#BookingTime").html(BookingTime);
+        $("#Software").html(Software);
     });
 }
 
