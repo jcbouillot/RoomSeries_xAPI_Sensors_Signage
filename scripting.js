@@ -27,57 +27,6 @@ function getData() {
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
         var alertlist = "";
-        var Diagnostics = response.result.Diagnostics.Message;
-        Diagnostics.forEach((diagnostic) => {
-            var description = diagnostic.Description;
-            var level = diagnostic.Level;
-            alertlist =
-                "" + alertlist + "--> " + level + ": " + description + "<br>";
-        });
-        try {
-            var calldetails = "";
-            Call = response.result.Call;
-            Call.forEach((call) => {
-                var Status = call.Status;
-                var ReceiveCallRate = call.ReceiveCallRate;
-                var TransmitCallRate = call.TransmitCallRate;
-                var CallType = call.CallType;
-                calldetails =
-                    "" +
-                    calldetails +
-                    "" +
-                    Status +
-                    " in " +
-                    CallType +
-                    "<br>" +
-                    "In: " +
-                    ReceiveCallRate +
-                    " / " +
-                    "Out: " +
-                    TransmitCallRate;
-            });
-        } catch (error) { }
-        try {
-            var devicelist = "";
-            var ConnectedDevice = response.result.Peripherals.ConnectedDevice;
-            ConnectedDevice.forEach((touchpanel) => {
-                var status = touchpanel.Status;
-                var name = touchpanel.Name;
-                var type = touchpanel.Type;
-                devicelist =
-                    "" +
-                    devicelist +
-                    "Status: " +
-                    status +
-                    "<br>" +
-                    "Model: " +
-                    type +
-                    " (" +
-                    name +
-                    ")" +
-                    "<br>";
-            });
-        } catch (error) { }
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
