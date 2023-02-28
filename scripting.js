@@ -26,7 +26,6 @@ function getData() {
         var ConnectedDevices = response.result.Peripherals.ConnectedDevice;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
-        var alertlist = "";
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
