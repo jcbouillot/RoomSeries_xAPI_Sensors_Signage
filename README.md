@@ -3,4 +3,4 @@
   <strong>Display Sensors from codecs on a Digital Signage Page</strong>
 </h4>
 <p dir="auto">
-  Access sensors from <a href="https://projectworkplace.cisco.com/products/codecs" target="_blank" rel="noopener">Cisco Codecs</a> conneted to the Cisco Cloud and display them on a Digital signage
+  Access sensors from <a href="https://projectworkplace.cisco.com/products/codecs" target="_blank" rel="noopener">Cisco Codecs</a> connected to the Cisco Cloud and display them on a Digital signage
