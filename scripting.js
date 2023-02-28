@@ -20,6 +20,7 @@ function getData() {
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
         var Software = response.result.SystemUnit.Software.DisplayName;
+        var ReleaseDate = response.result.SystemUnit.Software.ReleaseDate;
 
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
@@ -34,6 +35,7 @@ function getData() {
         $("#BookingStatus").html(BookingStatus);
         $("#BookingTime").html(BookingTime);
         $("#Software").html(Software);
+        $("#ReleaseDate").html(ReleaseDate);
     });
 }
 
