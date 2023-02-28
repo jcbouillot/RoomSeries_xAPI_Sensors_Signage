@@ -17,7 +17,6 @@ function getData() {
         var Humidity = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.RelativeHumidity;
         var Temperature = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.AmbientTemperature;
         var AirQualityIndex = response.result.Peripherals.ConnectedDevice[0].RoomAnalytics.AirQuality.Index;
-        var ConnectedDevices = response.result.Peripherals.ConnectedDevice;
         var BookingStatus = response.result.Bookings.Availability.Status;
         var BookingTime = response.result.Bookings.Availability.TimeStamp;
         var Software = response.result.SystemUnit.Software.Version;
