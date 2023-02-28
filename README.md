@@ -1,4 +1,4 @@
-<p dir="auto"><img src="https://github.com/jcbouillot/RoomSeries_Sensors_Signage/blob/main/Digital_Signage.png?raw=true" width="651" height="372" alt="" /></p>
+<p dir="auto"><img src="https://github.com/jcbouillot/RoomSeries_xAPI_Sensors_Signage/blob/main/Digital_Signage.png?raw=true" width="651" height="372" alt="" /></p>
 <h4 dir="auto">
   <strong>Display Sensors from codecs on a Digital Signage Page</strong>
 </h4>
