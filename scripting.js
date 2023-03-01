@@ -1,3 +1,9 @@
+function backgr(){
+    var backimg = ["./images/webex_night.jpg","./images/webex_dark.jpg","./images/webex_afternoon.jpg","./images/webex_morning.jpg","./images/webex_spiral1.jpg","./images/webex_spiral2.jpg","./images/webex_spiral3.jpg","./images/webex_spiral4.jpg"];
+    var randimg =Math.floor(Math.random()*8);
+    document.body.background = backimg[randimg];
+    }
+
 function getData() {
     var settings = {
         url: "https://webexapis.com/v1/xapi/status?deviceId=Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL0RFVklDRS8zZTkzZWQ1Ni0yZTBhLTRiMGQtODcwMi0wNTE3OTcxNjhlYWY&name=*.*",
