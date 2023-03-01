@@ -38,7 +38,7 @@ flex-direction: column;
 height: 100%;
 align-items: center;
 justify-content: center;
-  background: url('./webex_dark.jpg') no-repeat center fixed; 
+background: backgr(); 
   -webkit-background-size: cover; /* Old Chrome and Safari */
   background-size: cover; /* standardized version */
 }
