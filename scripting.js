@@ -31,13 +31,13 @@ function getData() {
         $("#AmbientNoise").html(AmbientNoise + " dBA");
         $("#SoundLevel").html(SoundLevel + " dBA");
         $("#RT60").html(RT60 / 1000 + "s");
-        $("#PeoplePresence").html(PeoplePresence);
+        $("#PeoplePresence").html(PeoplePresence == "Yes" ? "In use" : PeoplePresence);
         $("#Current").html(Current);
         $("#Capacity").html(Capacity);
         $("#Name").html(Name);
-        $("#Humidity").html(Humidity);
-        $("#Temperature").html(Temperature);
-        $("#AirQuality").html(AirQualityIndex);
+        $("#Humidity").html(Humidity + "%");
+        $("#Temperature").html(Temperature + " °C");
+        $("#AirQuality").html(AirQualityIndex + " TVOC");
         $("#BookingStatus").html(BookingStatus);
         $("#BookingTime").html(BookingTime);
         $("#Software").html(Software);
